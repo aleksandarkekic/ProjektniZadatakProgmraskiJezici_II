@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="438.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="438.0" style="-fx-background-color: #F40000;">
+         <children>
+            <Label fx:id="label1" alignment="CENTER" layoutX="77.0" layoutY="-1.0" prefHeight="86.0" prefWidth="285.0" style="-fx-background-color: white; -fx-alignment: center;" text="WELCOME" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txf1" alignment="TOP_LEFT" layoutX="80.0" layoutY="154.0" prefHeight="26.0" prefWidth="278.0" promptText="Unesite broj igraca...">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txf2" alignment="TOP_LEFT" layoutX="80.0" layoutY="221.0" prefHeight="26.0" prefWidth="278.0" promptText="Unesite dimenzije matrice..." />
+      <Button fx:id="myButton" layoutX="80.0" layoutY="287.0" mnemonicParsing="false" onAction="#potvrdi" prefHeight="26.0" prefWidth="278.0" style="-fx-background-radius: 30; -fx-border-color: #F97F7F; -fx-border-radius: 30; -fx-background-color: #F97F7F;" text="Potvrdi">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="30.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/players.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="40.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/matrix.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <BorderPane layoutX="-2.0" prefHeight="790.0" prefWidth="1006.0">
+         <top>
+            <SplitPane fx:id="mySplitPane" dividerPositions="0.6266025641025641" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="134.0" prefWidth="940.0" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <HBox layoutX="-1.0" layoutY="-1.0" prefHeight="84.0" prefWidth="998.0">
+                           <children>
+                              <Label fx:id="myLabel1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="297.0" stylesheets="@../css/application.css" text="Label">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="label1" alignment="TOP_LEFT" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="257.0" stylesheets="@../css/application.css" text="DiamondCircle">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button fx:id="myButton1" mnemonicParsing="false" onAction="#pokreniSimulaciju" prefHeight="42.0" prefWidth="97.0" stylesheets="@../css/application.css" text="START">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="100.0" right="10.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="myButton11" layoutX="756.0" layoutY="35.0" mnemonicParsing="false" onAction="#pauza" prefHeight="42.0" prefWidth="97.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-background-insets: 0; -fx-font-family: &quot;Lucida Console&quot;; -fx-text-fill: &quot;0038C4&quot;;" stylesheets="@../css/application.css" text="||">
+                                 <HBox.margin>
+                                    <Insets top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Pane fx:id="myLabel2" depthTest="ENABLE" layoutX="3.0" layoutY="5.0" prefHeight="36.0" prefWidth="991.0" stylesheets="@../css/application.css">
+                           <children>
+                              <Label fx:id="igrac1" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="4.0" prefHeight="30.0" prefWidth="90.0" />
+                              <Label fx:id="igrac2" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="4.0" prefHeight="30.0" prefWidth="90.0" />
+                              <Label fx:id="igrac4" alignment="CENTER" contentDisplay="CENTER" layoutX="771.0" layoutY="4.0" prefHeight="30.0" prefWidth="90.0" />
+                              <Label fx:id="igrac3" alignment="CENTER" contentDisplay="CENTER" layoutX="573.0" layoutY="4.0" prefHeight="30.0" prefWidth="90.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </top>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <left>
+            <VBox fx:id="myVBox" prefHeight="695.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="figura1" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 1">
+                     <graphic>
+                        <ImageView fx:id="figurica1" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 2">
+                     <graphic>
+                        <ImageView fx:id="figurica2" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura3" layoutX="10.0" layoutY="38.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 3">
+                     <graphic>
+                        <ImageView fx:id="figurica3" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura4" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 4">
+                     <graphic>
+                        <ImageView fx:id="figurica4" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura5" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 5">
+                     <graphic>
+                        <ImageView fx:id="figurica5" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura6" layoutX="10.0" layoutY="122.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 6">
+                     <graphic>
+                        <ImageView fx:id="figurica6" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura7" layoutX="10.0" layoutY="150.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 7">
+                     <graphic>
+                        <ImageView fx:id="figurica7" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura8" layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 8">
+                     <graphic>
+                        <ImageView fx:id="figurica8" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura9" layoutX="10.0" layoutY="206.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 9">
+                     <graphic>
+                        <ImageView fx:id="figurica9" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura10" layoutX="10.0" layoutY="234.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 10">
+                     <graphic>
+                        <ImageView fx:id="figurica10" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura11" layoutX="10.0" layoutY="262.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 11">
+                     <graphic>
+                        <ImageView fx:id="figurica11" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura12" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 12">
+                     <graphic>
+                        <ImageView fx:id="figurica12" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura13" layoutX="10.0" layoutY="318.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 13">
+                     <graphic>
+                        <ImageView fx:id="figurica13" fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura14" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="29.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 14">
+                     <graphic>
+                        <ImageView fx:id="figurica14" fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura15" layoutX="10.0" layoutY="374.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="28.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 15">
+                     <graphic>
+                        <ImageView fx:id="figurica15" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="figura16" layoutX="10.0" layoutY="402.0" mnemonicParsing="false" onAction="#prikazIstorije" prefHeight="34.0" prefWidth="178.0" stylesheets="@../css/application.css" text="Figura 16">
+                     <graphic>
+                        <ImageView fx:id="figurica16" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <GridPane fx:id="myGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="140.0" right="20.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <right>
+            <VBox prefHeight="610.0" prefWidth="273.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="labelKarta" prefHeight="54.0" prefWidth="163.0" stylesheets="@../css/application.css" text="TrenutnaKarta">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="kartaSlika" fitHeight="163.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../icons/specOne.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="opisKarte" prefHeight="61.0" prefWidth="232.0" style="-fx-background-color: &quot;#D4EBF7&quot;; -fx-border-color: blue; -fx-font-family: &quot;Lucida Console&quot;; -fx-alignment: top-left; -fx-font-size: 11; -fx-alignment: center;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="vrijemeLabel" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="172.0" prefWidth="163.0" stylesheets="@../css/application.css">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <VBox prefHeight="160.0" prefWidth="162.0">
+                           <children>
+                              <TextArea prefHeight="18.0" prefWidth="162.0" promptText="OBICNA FIGURA" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="65.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../icons/ObicnaFigura.png" />
+                                 </image>
+                              </ImageView>
+                              <TextArea layoutX="10.0" layoutY="10.0" prefHeight="8.0" prefWidth="162.0" promptText="LETECA FIGURA" />
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="65.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../icons/LetecaFigura.png" />
+                                 </image>
+                              </ImageView>
+                              <TextArea layoutX="10.0" layoutY="80.0" prefHeight="8.0" prefWidth="162.0" promptText="SUPER BRZA FIGURA" />
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="65.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../icons/SuperBrzaFigura.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="vremenskoTrajanje" prefHeight="54.0" prefWidth="243.0" style="-fx-background-color: &quot;#D4EBF7&quot;; -fx-border-color: blue; -fx-font-family: &quot;Lucida Console&quot;; -fx-font-size: 11; -fx-alignment: center;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#prikazRezultata" prefHeight="66.0" prefWidth="114.0" style="-fx-background-color: &quot;#EFFFA6&quot;; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: red;" text="Prikaz liste fajlova">
+                     <VBox.margin>
+                        <Insets left="60.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <Label fx:id="informacije" prefHeight="51.0" prefWidth="459.0" style="-fx-background-color: &quot;#D4EBF7&quot;; -fx-border-color: blue; -fx-font-family: &quot;Lucida Console&quot;; -fx-font-size: 11; -fx-alignment: center;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
